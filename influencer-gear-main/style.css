@@ -1,0 +1,150 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+
+/* comon style  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+background:  #FFFFFF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start{
+    
+    display: flex;
+    padding-left: 120px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.journey{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 52px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 30px;
+}
+.last-link a{
+    display: flex;
+    
+    background-color: whitesmoke;
+    color:crimson;
+    text-align: end;
+   
+}
+.collect{
+    display: flex;
+    width: 1047px;
+    flex-direction: column;
+    align-items: center;
+}
+.collections{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.collection{
+    width:40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 135px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+}
+
+.collection-title{
+    font-size: 28px;
+}
+.prize{
+    font-size: 24px;
+}
+.fa-star.filled{
+    color:#FB8200;
+}
+.size{
+    font-size: 14px;
+    color: #5E6366;;
+}
+.collection-summry{
+    font-size: 14px;
+    color: #787885;
+
+
+}
+
+
+footer{
+    display: flex;
+    background-color: rgb(39, 39, 88);
+    flex-direction: column;
+    align-items: center;
+}
+.myfooter{
+    text-align: center;
+    color: white;
+}
+h1.icon{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+/* media quary breakpoint */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .journey{
+        width: 100%;
+    }
+    .journey,.collections{
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .journey,.collections{
+        flex-direction: column;
+    }
+   
+}
+
+/* Tablet Device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .journey{
+        width: 100%;
+    }
+    .journey,.collections{
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .journey,.collections{
+        flex-direction: column;
+    }
+    
+}
